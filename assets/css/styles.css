@@ -1,0 +1,307 @@
+/* Importando a fonte 'Lato' do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* Reset Css - Definindo estilos básicos para a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Configurações gerais para o corpo da página */
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* HEADER */
+.nav-bar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo-container {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image-logo {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.icon-list {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    cursor: pointer;
+    background: #adde87 url(../img/fundo-banner.png) no-repeat center/contain;
+}
+
+.banner img {
+    width: 38%;
+    object-fit: contain;
+}
+
+/* MAIN */
+.promo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #a5a1a1;
+}
+
+.promo-content {
+    width: 52vw;
+    height: 10vh;
+    padding: 0 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.promo-section p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.product-container, .product-content {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.product-content {
+    width: 58vw;
+    gap: 50px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+}
+
+.product-details {
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 12px;
+}
+
+.product-details h3 {
+    font-size: 1.5em;
+}
+
+.product-details p {
+    font-size: 1.2em;
+    color: #161616;
+    font-weight: 600;
+}
+
+span {
+    font-size: 1.4em;
+    margin-left: 5px;
+    font-weight: 600;
+    color: #5ca720;
+    border-bottom: 2px solid #5ca720;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+    transition: transform ease 1.3s;
+}
+
+.product-item img:hover {
+    transform: scale(1.3);
+}
+
+figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 167, 32, 0.8);
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    text-align: start;
+    padding: 25px;
+    color: #fff5f5;
+    letter-spacing: 1.7px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+figure:hover figcaption {
+    transform: translateY(0);
+}
+
+.product-btn {
+    width: 146px;
+    border-radius: 18px;
+    padding: 7px;
+    border: none;
+    color: #fff5f5;
+    font-size: 1.2em;
+    font-weight: 900;
+    cursor: pointer;
+    background: #5ca720;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+}
+
+.product-btn:hover {
+    background: #512200;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    background: #f9f9f9;
+    border-top: 2px solid #a5a1a1;
+}
+
+.information-container {
+    width: 85vw;
+    height: 30vh;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.nav-info-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-link {
+    font-size: 1.5em;
+    color: #161616;
+    margin-bottom: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-link:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.custom-form {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.newsletter-label {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #161616;
+}
+
+.newsletter-input {
+    height: 55px;
+    padding: 0.75rem;
+    width: 350px;
+    border: 0.5px solid #a5a1a1;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-input:focus {
+    outline: none;
+    box-shadow: inset 0 0 5px #5ca720;
+}
+
+input::placeholder {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #a8a4a4;
+    background: #ffffff;
+}
+
+.submit-button {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #ffffff;
+    background: #5ca720;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 0 9px 9px 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.submit-button:hover {
+    background: #512200;
+}
+
+.social-payment-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #a5a1a1;
+}
+
+.social-payment-links {
+    width: 85vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-payment-links {
+    width: 260px;
+}
+
+.social-link,
+.payment-link {
+    margin: 10px;
+}
+
+.icon-visa {
+    position: relative;
+    bottom: 10px;
+    width: 60px;
+}
