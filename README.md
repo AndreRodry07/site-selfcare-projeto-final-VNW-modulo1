@@ -16,7 +16,7 @@ A responsividade do site foi minuciosamente testada no DevTools dos navegadores 
 - HTML5
 - CSS3
 
- ## Imagem do Projeto
+ ## Gif do Projeto
 ![SELFCARE](https://github.com/AndreRodry07/site-selfcare-projeto-final-VNW-modulo1/assets/136132744/f6984313-8f79-4de8-9e90-eae8e7cfb0bc)
 
 
